@@ -1,5 +1,12 @@
 // 表格展示数据 json  sortable是否需要开启排序 开启排序的字段必须为数字或者时间
-const card = [
+
+const role = [ // 角色管理
+  { label: '角色名称', name: 'roleName' },
+  { label: '备注', name: 'description' },
+  { label: '创建时间', name: 'createTime', sortable: true }
+]
+
+const card = [ // 开卡/退卡
   { label: '卡编号', name: 'cardNo' },
   { label: 'userId', name: 'userId' },
   { label: '姓名', name: 'userName' },
@@ -9,10 +16,10 @@ const card = [
   { label: '领卡时间', name: 'createTime', sortable: true }
 ]
 
-const userInfo = [
+const userInfo = [ // 用户信息查询
   { label: 'userId', name: 'userId' },
   { label: '姓名', name: 'userName' },
-  { label: '手机号', name: 'mobilePhone' },
+  { label: '电话', name: 'mobilePhone' },
   { label: '城市', name: 'city' },
   { label: '省份', name: 'province' },
   { label: '身份证', name: 'certNo' },
@@ -20,5 +27,5 @@ const userInfo = [
 ]
 
 export default {
-  card, userInfo
+  role, card, userInfo
 }

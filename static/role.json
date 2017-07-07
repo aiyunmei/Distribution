@@ -1,0 +1,26 @@
+{
+  "msg": {
+    "code": "20000",
+    "message": "SUCCESS"
+  },
+  "data": [
+    {
+      "id": 1, "roleName": "测试角色1", "description": "测试角色权限1", "createTime": "2017-07-07 15:39:22"
+    },
+    {
+      "id": 2, "roleName": "测试角色2", "description": "测试角色权限2", "createTime": "2017-07-07 15:39:32"
+    },
+    {
+      "id": 3, "roleName": "测试角色3", "description": "测试角色权限3", "createTime": "2017-07-07 15:39:42"
+    },
+    {
+      "id": 4, "roleName": "测试角色4", "description": "测试角色权限4", "createTime": "2017-07-07 15:39:52"
+    },
+    {
+      "id": 5, "roleName": "测试角色5", "description": "测试角色权限5", "createTime": "2017-07-07 15:39:55"
+    }
+  ],
+  "page": {
+    "pageNum": 1, "pageSize": 10, "pages": 1, "total": 5
+  }
+}

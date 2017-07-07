@@ -60,11 +60,11 @@
               console.log(res)
               if (res.data.msg.code === '20000') {
                 let routerData = res.data.data.modules
-                let companyId = res.data.data.companyId
+                let appKey = res.data.data.appKey
                 let accountId = res.data.data.Id
                 localStorage.setItem('ms_username', that.ruleForm.username) // 存储 用户信息
                 localStorage.setItem('routerData', JSON.stringify(routerData)) // 存储 路由
-                localStorage.setItem('companyId', companyId)  // 存储 companyId
+                localStorage.setItem('appKey', appKey)  // 存储 appKey
                 localStorage.setItem('accountId', accountId) // 存储 账号id
                 that.$router.addRoutes(setRouter(routerData)) // 渲染后台传送过来的路由
                 that.$router.push('/readme')

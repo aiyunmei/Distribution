@@ -10,11 +10,14 @@ const toHash = (params) => { // 传参转码
   return obj
 }
 
+const appKey = localStorage.getItem('appKey')
+
 const get = (url, params, store, boolean) => { // get 请求  boolean 是否需要转码 默认不转码
   return new Promise((resolve, reject) => {
     if (boolean === null || boolean === '' || boolean === undefined) {
       boolean = false
     }
+    params.appKey = appKey
     store.dispatch('setLoading', true)
     axios.get(url, { params: boolean === false ? params : toHash(params) }).then(res => {
       console.log(res)
@@ -47,6 +50,7 @@ const post = (url, params, store, boolean) => { // post请求 boolean 是否需�
     if (boolean === null || boolean === '' || boolean === undefined) {
       boolean = false
     }
+    params.appKey = appKey
     store.dispatch('setLoading', true)
     axios.post(url, qs.stringify(boolean === false ? params : toHash(params))).then(res => {
       resolve(res.data)

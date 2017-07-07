@@ -27,5 +27,13 @@
 /*table分页*/
 .item .item-pagination{text-align: right; margin: 8px 0 0 0;}
 
-/*禁用element样式*/
+/*dialog*/
+.item .el-dialog{max-height: 500px;overflow-y: auto;}
+.item .item-dialog{width: 100%;margin: 0 auto;}
+.item .item-dialog .item-dialog-submit{text-align: center;}
+.item .item-dialog .item-dialog-form-check{padding: 3px;border: 1px solid #666;margin: 3px 0;border-radius: 3px;}
+
+/*去除element样式*/
 .el-button+.el-button{margin-left:0}
+.el-checkbox+.el-checkbox{margin-left: 0;}
+.el-checkbox{margin-right: 10px;}

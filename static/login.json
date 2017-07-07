@@ -4,7 +4,7 @@
     "message": "SUCCESS"
   },
   "data": {
-    "companyId": "1",
+    "appKey": "appKey",
     "Id": 1,
     "modules": [
       {

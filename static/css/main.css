@@ -59,3 +59,6 @@ html,body,#app,.wrapper{width:100%;height:100%;overflow: hidden;}
 /*content_start*/
 .content{background: none repeat scroll 0 0 #fff;position: absolute;left: 240px;right: 0;top: 70px;bottom:0;width: auto;padding:5px;box-sizing: border-box;overflow-y: auto; transition: all 0.2s;  -webkit-transition: all 0.2s; -o-transition: all 0.2s; -moz-transition: all 0.2s;}
 /*content_end*/
+
+/*去掉el loading 背景色*/
+.el-loading-mask{background: rgba(255,255,255,0);}

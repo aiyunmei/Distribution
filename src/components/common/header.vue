@@ -31,7 +31,7 @@
         if (command === 'loginout') {
           localStorage.removeItem('ms_username')
           localStorage.removeItem('routerData')
-          localStorage.removeItem('companyId')
+          localStorage.removeItem('appKey')
           localStorage.removeItem('accountId')
           this.$router.push('/login')
         }

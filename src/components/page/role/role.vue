@@ -58,7 +58,7 @@
           </el-table-column>
           <el-table-column label="操作" width="220">
             <template scope="scope">
-              <el-button v-show='!scope.row.edit' type="primary" @click='handleEdit(scope.$index, scope.row)' size="small" icon="edit">编辑</el-button>
+              <el-button v-show='!scope.row.edit' type="primary" @click='scope.row.edit = true' size="small" icon="edit">编辑</el-button>
               <el-button v-show='scope.row.edit' type="success" @click='handleUpdate(scope.$index, scope.row)' size="small" icon="check">完成</el-button>
               <el-button type="primary" @click="setRole(scope.$index, scope.row)" size="small">设置权限</el-button>
               <el-button type="danger" @click="remove(scope.$index, scope.row)" size="small" icon="delete">删除</el-button>
@@ -195,9 +195,6 @@
             console.log('error')
           }
         })
-      },
-      handleEdit (index, row) { // 编辑
-        row.edit = true
       },
       handleUpdate (index, row) { // 提交编辑
         let that = this

@@ -69,7 +69,7 @@
           </el-table-column>
           <el-table-column label="操作" width="90">
             <template scope="scope">
-              <el-button v-show='!scope.row.edit' type="primary" @click='handleEdit(scope.$index, scope.row)' size="small" icon="edit">编辑</el-button>
+              <el-button v-show='!scope.row.edit' type="primary" @click='scope.row.edit = true' size="small" icon="edit">编辑</el-button>
               <el-button v-show='scope.row.edit' type="success" @click='handleUpdate(scope.$index, scope.row)' size="small" icon="check">完成</el-button>
             </template>
           </el-table-column>
@@ -144,9 +144,6 @@
       handleCurrentChange (val) { // 分页
         this.searchData.pageNum = val
         this.Result(this.searchData)
-      },
-      handleEdit (index, row) { // 编辑
-        row.edit = true
       },
       handleUpdate (index, row) { // 提交
         let that = this

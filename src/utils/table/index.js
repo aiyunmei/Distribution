@@ -9,6 +9,16 @@ const card = [
   { label: '领卡时间', name: 'createTime', sortable: true }
 ]
 
+const userInfo = [
+  { label: 'userId', name: 'userId' },
+  { label: '姓名', name: 'userName' },
+  { label: '手机号', name: 'mobilePhone' },
+  { label: '城市', name: 'city' },
+  { label: '省份', name: 'province' },
+  { label: '身份证', name: 'certNo' },
+  { label: '创建时间', name: 'createTime', sortable: true }
+]
+
 export default {
-  card
+  card, userInfo
 }

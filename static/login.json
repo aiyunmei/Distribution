@@ -121,6 +121,9 @@
         "moduleItems": [
           {
             "id": 38, "moduleIcon": "fa fa-list-ul", "moduleName": "开卡/退卡", "modulePath": "card", "parentId": 37
+          },
+          {
+            "id":39, "moduleIcon": "fa fa-list-ul", "moduleName": "用户信息查询", "modulePath": "userInfo", "parentId": 37
           }
         ]
       }

@@ -30,7 +30,7 @@
                 <el-date-picker v-model="searchData.checkEndTime" @input="checkEndTimeChange" type="date" placeholder="退卡截至日期" align="right" :editable="false" class="item-search-input-l"></el-date-picker>
               </el-col>
               <el-col :span="5">
-                <el-date-picker v-model="searchData.createTime" type="date" @input="createTimeChange" placeholder="领卡时间" align="right" :editable="false" class="item-search-input-l"></el-date-picker>
+                <el-date-picker v-model="searchData.createTime" type="date" @input="createTimeChange" placeholder="领卡日期" align="right" :editable="false" class="item-search-input-l"></el-date-picker>
               </el-col>
               <el-col :span="1">
                 <el-button type="primary" icon="search" @click="search"></el-button>
@@ -84,7 +84,6 @@
             layout="prev, pager, next, jumper, total">
           </el-pagination>
         </div>
-
       </div>
 
     </div>
@@ -161,7 +160,7 @@
 
         confirm('是否继续?', '提示', {confirmButtonText: '确定', cancelButtonText: '取消', type: 'warning'})
           .then(() => { // 确认
-            ajax.post(url, params, store, false).then((res) => {
+            ajax.post(url, params, store).then((res) => {
               console.log(res.message.code)
               message(res, store, row, that.$cardStatus, msg)
               row.edit = false

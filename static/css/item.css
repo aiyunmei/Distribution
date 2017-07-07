@@ -26,3 +26,6 @@
 
 /*table分页*/
 .item .item-pagination{text-align: right; margin: 8px 0 0 0;}
+
+/*禁用element样式*/
+.el-button+.el-button{margin-left:0}

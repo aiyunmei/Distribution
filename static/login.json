@@ -1,0 +1,129 @@
+{
+  "msg": {
+    "code": "20000",
+    "message": "SUCCESS"
+  },
+  "data": {
+    "companyId": "1",
+    "Id": 1,
+    "modules": [
+      {
+        "id": 1, "moduleIcon": "fa fa-cube", "moduleName": "企业日常维护", "parentId": 0,
+        "moduleItems": [
+          {
+            "id": 2, "moduleIcon": "fa fa-list-ul", "moduleName": "企业设备数量汇总", "modulePath": "deviceCompany", "parentId": 1
+          },
+          {
+            "id": 3, "moduleIcon": "fa fa-list-ul", "moduleName": "线路设备明细", "modulePath": "deviceLine", "parentId": 1
+          }
+        ]
+      },
+      {
+        "id": 4, "moduleIcon": "fa fa-cube", "moduleName": "票务清分", "parentId": 0,
+        "moduleItems": [
+          {
+            "id": 5, "moduleIcon": "fa fa-list-ul", "moduleName": "线路/站点台账", "modulePath": "reportLine", "parentId": 4
+          },
+          {
+            "id": 6, "moduleIcon": "fa fa-list-ul", "moduleName": "司机台账", "modulePath": "reportDriver", "parentId": 4
+          },
+          {
+            "id": 7, "moduleIcon": "fa fa-list-ul", "moduleName": "单车/闸机台账", "modulePath": "reportCarry", "parentId": 4
+          },
+          {
+            "id": 8, "moduleIcon": "fa fa-list-ul", "moduleName": "运营公司台账", "modulePath": "reportCompany", "parentId": 4
+          },
+          {
+            "id": 9, "moduleIcon": "fa fa-list-ul", "moduleName": "单车明细台账", "modulePath": "alipayTradeDealLogCarry", "parentId": 4
+          },
+          {
+            "id": 11, "moduleIcon": "fa fa-list-ul", "moduleName": "站点台账", "modulePath": "reportStation", "parentId": 4
+          }
+        ]
+      },
+      {
+        "id": 12, "moduleIcon": "fa fa-cube", "moduleName": "用户统计", "parentId": 0,
+        "moduleItems": [
+          {
+            "id": 13, "moduleIcon": "fa fa-list-ul", "moduleName": "新增用户数", "modulePath": "newUser", "parentId": 12
+          },
+          {
+            "id": 14, "moduleIcon": "fa fa-list-ul", "moduleName": "用户刷卡明细", "modulePath": "alipayTradeDealLogUser", "parentId": 12
+          },
+          {
+            "id": 15, "moduleIcon": "fa fa-list-ul", "moduleName": "用户刷卡汇总", "modulePath": "userDetails", "parentId": 12
+          }
+        ]
+      },
+      {
+        "id": 16, "moduleIcon": "fa fa-cube", "moduleName": "支付宝T+1对账", "parentId": 0,
+        "moduleItems": [
+          {
+            "id": 17, "moduleIcon": "fa fa-list-ul", "moduleName": "zip包列表", "modulePath": "sftp", "parentId": 16
+          },
+          {
+            "id": 18, "moduleIcon": "fa fa-list-ul", "moduleName": "公司每日业务明细汇总", "modulePath": "alipayReportCompany", "parentId": 16
+          },
+          {
+            "id": 19, "moduleIcon": "fa fa-list-ul", "moduleName": "线路每日业务明细汇总", "modulePath": "alipayReportLine", "parentId": 16
+          },
+          {
+            "id": 20, "moduleIcon": "fa fa-list-ul", "moduleName": "每日业务明细清单", "modulePath": "alipayReportDetail", "parentId": 16
+          },
+          {
+            "id": 21, "moduleIcon": "fa fa-list-ul", "moduleName": "交易流水汇总", "modulePath": "transactionFlowSummary", "parentId": 16
+          }
+        ]
+      },
+      {
+        "id": 22, "moduleIcon": "fa fa-cube", "moduleName": "机具与支付网关交易", "parentId": 0,
+        "moduleItems": [
+          {
+            "id": 23, "moduleIcon": "fa fa-list-ul", "moduleName": "交易流水清单", "modulePath": "alipayTradeDealLog", "parentId": 22
+          }
+        ]
+      },
+      {
+        "id": 26, "moduleIcon": "fa fa-cube", "moduleName": "支付宝交易扣款", "parentId": 0,
+        "moduleItems": [
+          {
+            "id": 27, "moduleIcon": "fa fa-list-ul", "moduleName": "扣款处理清单", "modulePath": "alipaytradedetail", "parentId": 26
+          },
+          {
+            "id": 28, "moduleIcon": "fa fa-list-ul", "moduleName": "扣款处理汇总", "modulePath": "alipaytrademain", "parentId": 26
+          }
+        ]
+      },
+      {
+        "id": 29, "moduleIcon": "fa fa-cube", "moduleName": "换乘优惠", "parentId": 0,
+        "moduleItems": [
+          {
+            "id": 30, "moduleIcon": "fa fa-list-ul", "moduleName": "换乘优惠明细", "modulePath": "payTradeDealLog", "parentId": 29
+          },
+          {
+            "id": 31, "moduleIcon": "fa fa-list-ul", "moduleName": "换乘优惠统计", "modulePath": "payTradeDealTotal", "parentId": 29
+          }
+        ]
+      },
+      {
+        "id": 32, "moduleIcon": "fa fa-cube", "moduleName": "系统设置", "parentId": 0,
+        "moduleItems": [
+          {
+            "id": 33, "moduleIcon": "fa fa-list-ul", "moduleName": "角色管理", "modulePath": "role", "parentId": 32
+          },
+          {
+            "id": 34, "moduleIcon": "fa fa-list-ul", "moduleName": "账号管理", "modulePath": "user", "parentId": 32
+          }
+        ]
+      },
+      {
+        "id": 37, "moduleIcon": "fa fa-cube", "moduleName": "三位一体", "parentId": 0,
+        "moduleItems": [
+          {
+            "id": 38, "moduleIcon": "fa fa-list-ul", "moduleName": "开卡/退卡", "modulePath": "card", "parentId": 37
+          }
+        ]
+      }
+    ]
+  }
+}

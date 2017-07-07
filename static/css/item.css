@@ -1,0 +1,28 @@
+@charset "utf-8";
+.item{width: 100%;margin: 0 auto;}
+
+/*table*/
+.item .item-table{  border: 1px solid #E6E9ED;  margin: 10px auto;  width: 100%;  background: #fff;  border-radius: 6px;  position: relative;  zoom: 1;  overflow: hidden; box-sizing: border-box; }
+
+/*搜索*/
+.item .item-search .item-search-input .item-search-input-l{width: 100%;}
+.item .item-search .item-search-btn-box{  text-align: right;  padding-top: 5px;  }
+.item .item-search .item-search-btn{  display: inline-block; width: 100%; }
+.item .item-search .item-search-btn .el-button{width: 100%;}
+.item .item-search .item-search-btn a,.item .item-search .item-search-btn a:hover{  color: #fff;  }
+.el-collapse-item__header{line-height: 40px;}
+
+/*表格标题*/
+.item .item-table .item-table-title{  width: 98%;  margin: 0 auto;  padding: 15px 0 13px 0;  border-bottom: 2px solid #E6E9ED;  position: relative;  }
+.item .item-table .item-table-title h2{  font-size: 18px;  font-weight: normal;  color: #777;  }
+.item .item-table .item-table-title h2 span{  font-size:14px;  margin-left: 20px;  color: #999;  }
+.item .item-table .item-table-title .item-table-add{  position: absolute;  right: 0;top:10px;  }
+
+/*main*/
+.item .item-table .item-table-main{width: 98%;  margin: 10px auto;}
+.item .item-table .item-table-main .el-table .el-table__body-wrapper .el-table__body tr:nth-child(2n){background: #c9e5f5;}
+.item .item-table .item-table-main .el-table__header tr .cell{text-align: center;}
+.item .item-table .item-table-main .el-table__body-wrapper tr .cell{height: 50px;padding: 5px 2px;line-height: 40px;cursor: pointer;text-align: center;white-space: nowrap;overflow: hidden;text-overflow:ellipsis;}
+
+/*table分页*/
+.item .item-pagination{text-align: right; margin: 8px 0 0 0;}

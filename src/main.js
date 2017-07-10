@@ -10,6 +10,7 @@ import api from './utils/api/index' // 接口
 import table from './utils/table/index' // 表格展示数据
 import clearSearchData from './utils/clearSearchData/index'
 import cardStatus from './utils/changeType/cardStatus' // 展示卡状态
+import workType from './utils/changeType/workType' // 展示启用禁用状态
 // css
 import '../static/css/reset_min.css' // reset
 // import 'element-ui/lib/theme-default/index.css' // element.css
@@ -27,6 +28,7 @@ Vue.prototype.$table = table
 Vue.use(element)
 Vue.use(clearSearchData)
 Vue.use(cardStatus)
+Vue.use(workType)
 
 /* eslint-disable no-new */
 new Vue({

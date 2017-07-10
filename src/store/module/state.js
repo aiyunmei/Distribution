@@ -9,6 +9,9 @@ const state = { // 静态数据
   page: {}, // 分页数据
   cardStatusOptions: [ // 卡类型options
     { label: '使用中', value: 'enabled' }, { label: '已消卡', value: 'revoked' }, {label: '禁用中', value: 'disabled'}
+  ],
+  workOptions: [ // 启用禁用options
+    { label: '启用', value: 1 }, { label: '禁用', value: 0 }
   ]
 }
 

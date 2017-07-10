@@ -109,6 +109,9 @@
             </el-checkbox-group>
           </div>
         </div>
+        <div class="item-dialog-submit">
+          <el-button type="primary" icon="edit" @click="roleInfo">提交</el-button>
+        </div>
       </div>
     </el-dialog>
 
@@ -212,6 +215,14 @@
       setRole (index, row) { // 权限设置
         this.dialogRole = true
         this.dialogRoleName = row.roleName
+      },
+      roleInfo () { // 提交权限
+        let that = this
+        let confirm = that.$confirm
+        confirm('是否继续?', '提示', {confirmButtonText: '确定', cancelButtonText: '取消', type: 'warning'})
+          .then(() => {
+            console.log(that.checkData)
+          }).catch(() => {})
       },
       handleCheckAllChange (index) { // 选择权限父字段 子字段解除
         if (this.checkData[index].checked === false) {
